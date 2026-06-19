@@ -4,14 +4,14 @@ public class DepositoAgua {
     private double volumenActual;
     private DepositoAgua depositoDesborde;
 
-    // Constructor
+    
     public DepositoAgua(double capacidad) {
         setCapacidad(capacidad);
         this.volumenActual = 0;
         this.depositoDesborde = null;
     }
 
-    // Getters y Setters
+    
     public double getCapacidad() { return capacidad; }
 
     public void setCapacidad(double capacidad) {
@@ -28,7 +28,7 @@ public class DepositoAgua {
     public DepositoAgua getDepositoDesborde() { return depositoDesborde; }
     public void setDepositoDesborde(DepositoAgua depositoDesborde) { this.depositoDesborde = depositoDesborde; }
 
-    // Métodos
+    
     public void mostrarEstado() {
         System.out.printf(" Capacidad: %.1f L  |  Volumen actual: %.1f L  |  Espacio libre: %.1f L%n",
                 capacidad, volumenActual, capacidad - volumenActual);
