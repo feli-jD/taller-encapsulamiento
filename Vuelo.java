@@ -6,7 +6,7 @@ public class Vuelo {
     private int ocupacion;
     private int capacidadMaxima;
 
-    // Constructor
+   
     public Vuelo(String numero, String origen, String destino, int capacidadMaxima) {
         this.numero = numero;
         this.origen = origen;
@@ -15,7 +15,7 @@ public class Vuelo {
         this.ocupacion = 0;
     }
 
-    // Getters y Setters
+   
     public String getNumero() { return numero; }
     public void setNumero(String numero) { this.numero = numero; }
 
@@ -40,7 +40,7 @@ public class Vuelo {
         }
     }
 
-    // Métodos
+  
     public void mostrarInfo() {
         System.out.println("✈ Vuelo: " + numero + "  |  " + origen + " → " + destino);
         System.out.println("  Pasajeros: " + ocupacion + " / " + capacidadMaxima);
